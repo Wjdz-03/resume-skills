@@ -1,0 +1,59 @@
+{
+  "name": "resume-skills",
+  "version": "0.4.0",
+  "author": {
+    "name": "Wjdz-03",
+    "url": "https://github.com/Wjdz-03"
+  },
+  "homepage": "https://github.com/Wjdz-03/resume-skills",
+  "repository": "https://github.com/Wjdz-03/resume-skills",
+  "license": "MIT",
+  "keywords": [
+    "qoder-plugin",
+    "skill",
+    "resume",
+    "job-search",
+    "job-match",
+    "job-application",
+    "career",
+    "chinese",
+    "ai-application",
+    "java-python",
+    "great-resume",
+    "make-resume",
+    "job-apply"
+  ],
+  "displayName": "Resume Skills",
+  "description": "中文求职助手：简历提升、简历制作、岗位匹配和简历投递填写等全流程陪伴。",
+  "descriptionZh": "中文求职助手：简历提升、简历制作、岗位匹配和简历投递填写等全流程陪伴。",
+  "category": "Productivity",
+  "tags": [
+    "skill",
+    "resume",
+    "job-search",
+    "career"
+  ],
+  "logo": "./assets/asu-circle.png",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Resume Skills",
+    "shortDescription": "输入 /great-resume、/make-resume、/job-match、/job-apply 完成中文求职工作流",
+    "developerName": "Wjdz-03",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Wjdz-03/resume-skills",
+    "defaultPrompt": [
+      "用 /great-resume 提升我的经历并生成 HR 开场白。",
+      "用 /make-resume 默认基于 ASu 模板制作可编辑 HTML 简历，也可以指定其他模板。",
+      "用 /job-match 对照目标 JD 与真实经历，判断岗位匹配和证据缺口。",
+      "用 /job-apply 通过已连接的浏览器填写求职申请，并在提交前核对。"
+    ],
+    "brandColor": "#11A683",
+    "composerIcon": "./assets/asu-circle.png",
+    "logo": "./assets/asu-circle.png"
+  }
+}

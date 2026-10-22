@@ -1,0 +1,26 @@
+{
+  "name": "resume-skills",
+  "displayName": "Resume Skills",
+  "description": "中文求职工作流：简历提升、简历制作、岗位匹配和简历投递填写。",
+  "version": "0.4.0",
+  "author": {
+    "name": "Wjdz-03",
+    "url": "https://github.com/Wjdz-03"
+  },
+  "homepage": "https://github.com/Wjdz-03/resume-skills",
+  "repository": "https://github.com/Wjdz-03/resume-skills",
+  "license": "MIT",
+  "keywords": [
+    "resume",
+    "job-search",
+    "job-match",
+    "job-application",
+    "career",
+    "chinese",
+    "ai-application",
+    "java-python",
+    "great-resume",
+    "make-resume",
+    "job-apply"
+  ]
+}

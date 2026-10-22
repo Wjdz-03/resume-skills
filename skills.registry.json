@@ -1,0 +1,123 @@
+{
+  "comment": "简历求职 skills 入口目录单一事实源（基于 Hisn00w/ASu-skills 二次开发，MIT）。新增/删除/改名入口时：1) 在 skills/ 下建/删目录；2) 编辑本文件 entries；3) 在仓库根目录运行 `npm run sync:skills`；4) 涉及新入口的 README/SKILL.md 文案自行补充。插件清单、README 总览等生成区域不要手工编辑。",
+  "name": "resume-skills",
+  "displayName": "Resume Skills",
+  "developerName": "Wjdz-03",
+  "category": "Productivity",
+  "brandColor": "#11A683",
+  "composerIcon": "./assets/asu-circle.png",
+  "logo": "./assets/asu-circle.png",
+  "websiteURL": "https://github.com/Wjdz-03/resume-skills",
+  "homepage": "https://github.com/Wjdz-03/resume-skills",
+  "repository": "https://github.com/Wjdz-03/resume-skills",
+  "license": "MIT",
+  "author": {
+    "name": "Wjdz-03",
+    "url": "https://github.com/Wjdz-03"
+  },
+  "keywordsBase": [
+    "resume",
+    "job-search",
+    "job-match",
+    "job-application",
+    "career",
+    "chinese",
+    "ai-application",
+    "java-python"
+  ],
+  "entries": [
+    {
+      "name": "great-resume",
+      "zh": {
+        "menuLabel": "简历提升",
+        "prompt": "用 /great-resume 提升我的经历并生成 HR 开场白。",
+        "opencodeDetail": "把真实经历重组为岗位定位、简历要点、HR开场白",
+        "deliverables": "岗位定位、项目改写、成果证据、HR 开场白"
+      },
+      "en": {
+        "menu": "Resume improvement",
+        "deliverables": "Role targeting, project bullet rewrites, evidence of results, HR opener"
+      },
+      "site": {
+        "title": "简历提升",
+        "description": "对齐目标岗位，提炼职责、结果和 HR 开场白。",
+        "color": "pink",
+        "readmeAnchor": "great-resume简历提升"
+      }
+    },
+    {
+      "name": "make-resume",
+      "zh": {
+        "menuLabel": "简历制作",
+        "prompt": "用 /make-resume 默认基于 ASu 模板制作可编辑 HTML 简历，也可以指定其他模板。",
+        "opencodeDetail": "默认使用 ASu 模板，也可指定其他模板，生成可编辑 HTML 简历并提供 PDF 导出与可选的 LaTeX 源文件",
+        "deliverables": "按 ASu 或指定模板生成可编辑 HTML 简历，支持 PDF 导出与可选的 LaTeX 源文件"
+      },
+      "en": {
+        "menu": "Resume building",
+        "deliverables": "Generates an editable HTML resume from the ASu or a specified template, with PDF export and optional LaTeX source"
+      },
+      "site": {
+        "title": "简历制作",
+        "description": "默认使用 ASu 模板，也可指定其他模板，生成可编辑 HTML 和 PDF，可选 LaTeX 源文件。",
+        "color": "blue",
+        "readmeAnchor": "make-resume制作简历"
+      }
+    },
+    {
+      "name": "job-match",
+      "zh": {
+        "menuLabel": "岗位匹配",
+        "prompt": "用 /job-match 对照目标 JD 与真实经历，判断岗位匹配和证据缺口。",
+        "opencodeDetail": "对照 JD 与真实经历生成证据矩阵和投递建议",
+        "deliverables": "对照 JD 与真实经历，输出证据矩阵、硬性门槛和投递建议"
+      },
+      "en": {
+        "menu": "Job matching",
+        "deliverables": "Compares a JD with verified experience and returns an evidence matrix, hard constraints, and an application recommendation"
+      },
+      "site": {
+        "title": "岗位匹配",
+        "description": "对照目标 JD 与真实经历，区分匹配证据、表达缺口和真实缺口。",
+        "color": "cyan",
+        "readmeAnchor": "job-match岗位匹配分析"
+      }
+    },
+    {
+      "name": "job-apply",
+      "zh": {
+        "menuLabel": "简历投递填写",
+        "prompt": "用 /job-apply 通过已连接的浏览器填写求职申请，并在提交前核对。",
+        "opencodeDetail": "通过已连接的浏览器填写申请并在提交前核对",
+        "deliverables": "连接浏览器自动填写求职申请，核对后停在提交前"
+      },
+      "en": {
+        "menu": "Job-application autofill",
+        "deliverables": "Connects to a browser, fills an application, and stops for review before submission"
+      },
+      "site": {
+        "title": "简历投递填写",
+        "description": "连接浏览器填写申请表，始终停在提交前核对。",
+        "color": "gold",
+        "readmeAnchor": "job-apply简历投递填写"
+      },
+      "excludeFrom": {
+        "workbuddy": "依赖仓库根目录 scripts/ 下的 Kimi WebBridge 桥接脚本与浏览器扩展，纯技能目录桥接无法提供可执行环境"
+      }
+    }
+  ],
+  "snippets": {
+    "opencodeInstructionsZh": [
+      "1. 克隆仓库到本地",
+      "2. 将 skills/ 目录下所有文件夹复制到 OpenCode 的 skills 目录（通常为 ~/.config/opencode/skills/）",
+      "3. 重启 OpenCode 或执行 /reload-plugins",
+      "4. 使用 /great-resume、/make-resume、/job-match、/job-apply 等触发词调用"
+    ],
+    "opencodeInstructionsEn": [
+      "1. Clone the repository locally",
+      "2. Copy all folders under skills/ to OpenCode skills directory (usually ~/.config/opencode/skills/)",
+      "3. Restart OpenCode or execute /reload-plugins",
+      "4. Trigger with /great-resume, /make-resume, /job-match, /job-apply etc."
+    ]
+  }
+}

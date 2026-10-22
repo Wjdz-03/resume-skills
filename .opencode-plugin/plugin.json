@@ -1,0 +1,65 @@
+{
+  "name": "resume-skills",
+  "version": "0.4.0",
+  "author": {
+    "name": "Wjdz-03",
+    "url": "https://github.com/Wjdz-03"
+  },
+  "homepage": "https://github.com/Wjdz-03/resume-skills",
+  "repository": "https://github.com/Wjdz-03/resume-skills",
+  "license": "MIT",
+  "keywords": [
+    "resume",
+    "job-search",
+    "job-match",
+    "job-application",
+    "career",
+    "chinese",
+    "ai-application",
+    "java-python",
+    "great-resume",
+    "make-resume",
+    "job-apply"
+  ],
+  "description": "中文求职工作流插件：简历提升、简历制作、岗位匹配和简历投递填写。",
+  "skills": {
+    "path": "./skills",
+    "entries": [
+      {
+        "name": "great-resume",
+        "description": "简历提升：把真实经历重组为岗位定位、简历要点、HR开场白"
+      },
+      {
+        "name": "make-resume",
+        "description": "简历制作：默认使用 ASu 模板，也可指定其他模板，生成可编辑 HTML 简历并提供 PDF 导出与可选的 LaTeX 源文件"
+      },
+      {
+        "name": "job-match",
+        "description": "岗位匹配：对照 JD 与真实经历生成证据矩阵和投递建议"
+      },
+      {
+        "name": "job-apply",
+        "description": "简历投递填写：通过已连接的浏览器填写申请并在提交前核对"
+      }
+    ]
+  },
+  "install": {
+    "method": "copy",
+    "source": "skills",
+    "destination": "{opencode_skills_dir}",
+    "instructions": {
+      "zh": [
+        "1. 克隆仓库到本地",
+        "2. 将 skills/ 目录下所有文件夹复制到 OpenCode 的 skills 目录（通常为 ~/.config/opencode/skills/）",
+        "3. 重启 OpenCode 或执行 /reload-plugins",
+        "4. 使用 /great-resume、/make-resume、/job-match、/job-apply 等触发词调用"
+      ],
+      "en": [
+        "1. Clone the repository locally",
+        "2. Copy all folders under skills/ to OpenCode skills directory (usually ~/.config/opencode/skills/)",
+        "3. Restart OpenCode or execute /reload-plugins",
+        "4. Trigger with /great-resume, /make-resume, /job-match, /job-apply etc."
+      ]
+    }
+  }
+}

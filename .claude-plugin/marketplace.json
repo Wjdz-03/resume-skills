@@ -1,0 +1,38 @@
+{
+  "name": "asu",
+  "description": "ASu 中文求职工作流插件市场。",
+  "owner": {
+    "name": "Wjdz-03",
+    "url": "https://github.com/Wjdz-03"
+  },
+  "plugins": [
+    {
+      "name": "resume-skills",
+      "version": "0.4.0",
+      "author": {
+        "name": "Wjdz-03",
+        "url": "https://github.com/Wjdz-03"
+      },
+      "homepage": "https://github.com/Wjdz-03/resume-skills",
+      "repository": "https://github.com/Wjdz-03/resume-skills",
+      "license": "MIT",
+      "keywords": [
+        "resume",
+        "job-search",
+        "job-match",
+        "job-application",
+        "career",
+        "chinese",
+        "ai-application",
+        "java-python",
+        "great-resume",
+        "make-resume",
+        "job-apply"
+      ],
+      "source": "./",
+      "displayName": "Resume Skills",
+      "description": "用 /great-resume、/make-resume、/job-match、/job-apply 完成中文求职工作流。",
+      "category": "Productivity"
+    }
+  ]
+}

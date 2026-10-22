@@ -1,0 +1,49 @@
+# resume-skills 协作规范
+
+## 项目说明
+
+resume-skills 是面向智能应用开发 / Java+Python+AI 求职方向的简历技能包（基于 Hisn00w/ASu-skills 二次开发，MIT），包含简历提升、简历制作、岗位匹配分析和简历投递填写 4 个入口。经历提升统一使用 `/great-resume`；所有简历文件制作统一使用 `/make-resume`：默认采用 ASu 模板，用户也可以指定其他模板；岗位匹配分析使用 `/job-match`，简历投递填写使用 `/job-apply`。
+
+## 修改规则
+
+- 修改前先检查当前分支、工作区状态和远程更新。
+- `assets/asu-resume-template.html` 是 `/make-resume` 的默认只读母版。生成用户专属简历时复制模板，不直接修改母版。
+- README 中的图片使用仓库内相对路径，图片资源放在 `assets/` 下。
+- 品牌 Logo 优先使用 `@lobehub/icons` 或 `@lobehub/icons-static-svg` 的 SVG，不自行绘制或使用低清截图。
+- 修改后检查 Markdown 冲突标记、路径、JSON 格式和相关技能的可用性。
+- 合并远程更新时保留双方有效内容；解决冲突后再提交合并结果。
+- 创建 PR 前必须阅读 [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) 和 [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)，并完成模板中的全部检查项；无法完成的项目必须在 PR 中说明原因和替代验证。
+
+## 提交规范
+
+提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)：
+
+```text
+<type>: <中文简短标题>
+```
+
+常用类型：
+
+- `feat:` 新增功能或资源；
+- `fix:` 修复问题；
+- `docs:` 修改 README、规范或其他文档；
+- `refactor:` 重构代码或目录，不改变功能；
+- `chore:` 构建、依赖或维护性修改；
+- `test:` 新增或修改测试。
+
+标题使用中文、简洁明确，并说明具体改动和原因。例如：
+
+```text
+docs: 新增仓库协作与提交规范说明
+feat: 新增可编辑同款简历模板
+fix: 修复模板自动保存覆盖新内容
+```
+
+## 提交与 PR 前检查
+
+```powershell
+git diff --check
+git status --short
+```
+
+涉及技能修改时，运行对应的技能校验；涉及 HTML 模板时，至少进行一次浏览器预览，确认布局、资源路径和分页效果。

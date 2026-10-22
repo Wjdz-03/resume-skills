@@ -1,0 +1,67 @@
+{
+  "name": "resume-skills",
+  "version": "0.4.0",
+  "description": "面向智能应用开发 / Java+Python+AI 求职方向的简历技能包，基于 Hisn00w/ASu-skills 二次开发：简历提升、可编辑简历制作、岗位匹配分析和简历投递填写（DeepSeek Harness 插件包）。",
+  "license": "MIT",
+  "type": "module",
+  "icon": "./assets/asu-circle-compressed.png",
+  "scripts": {
+    "export:pdf": "node scripts/export-resume-pdf.mjs",
+    "build:asu-resume": "node scripts/build-asu-resume.mjs",
+    "check:asu-resume": "node scripts/build-asu-resume.mjs --check",
+    "build:templates": "node scripts/inline-template.mjs --all dist/templates",
+    "build:latex-resume": "node scripts/build-latex-resume.mjs",
+    "sync:skills": "node scripts/sync-skill-catalog.mjs",
+    "sync:skills:check": "node scripts/sync-skill-catalog.mjs --check",
+    "validate:skills": "python3 scripts/validate_skills.py",
+    "test:python": "python3 -m unittest discover -s tests -t . -v",
+    "test": "node --test"
+  },
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/asu-circle-compressed.png"
+  },
+  "files": [
+    "locale/*.json",
+    "lib",
+    "cordis.patch.yml",
+    "skills",
+    "scripts",
+    "assets",
+    "references",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skill",
+    "resume",
+    "job-search",
+    "job-match",
+    "job-application",
+    "career",
+    "chinese",
+    "ai-application",
+    "java-python",
+    "great-resume",
+    "make-resume",
+    "job-apply"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wjdz-03/resume-skills.git"
+  },
+  "homepage": "https://github.com/Wjdz-03/resume-skills",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
