@@ -293,7 +293,7 @@ resume-skills/
 
 Issues and PRs are welcome. See the [contributing guide](.github/CONTRIBUTING_en.md), or browse the repository's [Pull Requests](https://github.com/Wjdz-03/resume-skills/pulls).
 
-When adding, removing, or renaming an entry, first update [`skills.registry.json`](skills.registry.json), then run `npm run sync:skills` to regenerate every plugin manifest, installer, issue template, and the README overview; CI verifies consistency with `npm run sync:skills -- --check`.
+When adding, removing, or renaming an entry, first update [`skills.registry.json`](skills.registry.json), then run `npm run sync:skills` to regenerate every plugin manifest, installer, issue template, and the README overview; verify consistency with `npm run sync:skills -- --check`.
 
 ## Acknowledgments
 

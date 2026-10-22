@@ -281,7 +281,7 @@ resume-skills/
 
 欢迎提 Issue 和 PR，详见[贡献指南](.github/CONTRIBUTING.md)。也可以直接查看 [Pull Requests](https://github.com/Wjdz-03/resume-skills/pulls)。
 
-新增、删除或重命名入口时，先更新 [`skills.registry.json`](skills.registry.json)，再运行 `npm run sync:skills` 同步全部插件清单、安装脚本、Issue 模板与 README 总览；CI 会以 `npm run sync:skills -- --check` 校验一致性。
+新增、删除或重命名入口时，先更新 [`skills.registry.json`](skills.registry.json)，再运行 `npm run sync:skills` 同步全部插件清单、安装脚本、Issue 模板与 README 总览；可用 `npm run sync:skills -- --check` 校验一致性。
 
 ## 特别感谢
 
